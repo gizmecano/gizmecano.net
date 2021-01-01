@@ -1,5 +1,5 @@
 /* Raster v20 (dev package) (rsms.me/raster) */
-@import url('https://rsms.me/inter/inter.css');
+/* @import url('https://rsms.me/inter/inter.css'); */
 @import url('https://rsms.me/res/fonts/iaw.css');
 /*
 
@@ -22,7 +22,7 @@ Variables
   --fontSize: calc(100vw / 30);
 }}*/
 :root {
-  --sansFont: "Inter";
+  --sansFont: "Inter var";
   --monoFont: "iaw-mono";  /* "IBM Plex Mono" */
 
   /* line height is the basis for vertical spacing */
