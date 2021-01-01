@@ -3,3 +3,6 @@
 # Declare files that will always be normalized to native line endings on checkout.
 *.git*        text
 .editorconfig text
+# Declare files that will always have CRLF line endings on checkout.
+*.json text eol=crlf
+*.lock text eol=crlf

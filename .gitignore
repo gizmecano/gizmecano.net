@@ -3,3 +3,6 @@
 
 # Development environment
 *.code-workspace
+
+# Dependencies folder
+/vendor/

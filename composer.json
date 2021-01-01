@@ -1,0 +1,26 @@
+{
+  "name": "gizmecano/gizmecano.net",
+  "description": "the GizMecano Laboratory",
+  "version": "7.0.0-alpha",
+  "homepage": "http://gizmecano.net/",
+  "authors": [
+    {
+      "name": "P. Mergey",
+      "homepage": "http://mergey.ch/",
+      "role": "owner"
+    }
+  ],
+  "require": {
+    "michelf/php-markdown": "~1.8",
+    "michelf/php-smartypants": "~1.8"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-0": {
+      "Michelf\\Markdown": "vendor/michelf/php-markdown/Michelf",
+      "Michelf\\SmartyPants": "vendor/michelf/php-smartypants/Michelf"
+    }
+  },
+  "type": "project",
+  "license": "proprietary"
+}
