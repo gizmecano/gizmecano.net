@@ -4,5 +4,8 @@
 # Development environment
 *.code-workspace
 
+# Binary files
+*.woff2
+
 # Dependencies folder
 /vendor/
