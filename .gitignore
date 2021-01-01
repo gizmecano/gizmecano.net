@@ -1,2 +1,5 @@
-# Operating system settings
+# Operating system
 [Dd]esktop.ini
+
+# Development environment
+*.code-workspace
