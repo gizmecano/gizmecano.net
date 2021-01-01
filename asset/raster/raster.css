@@ -982,10 +982,10 @@ p + table {
 .flex-h { display: -webkit-box; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; flex-direction: row }
 .flex-v { display: -webkit-box; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column }
 /* relative positioning */
-.top {}
+/* .top {} */
 .left { text-align:left }
 .right { text-align:right }
-.bottom { }
+/* .bottom { } */
 .center { text-align:center }
 .flex-v.center { align-self:center }
 .flex-h .bottom { align-self:flex-end }
