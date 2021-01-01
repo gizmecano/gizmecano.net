@@ -10,8 +10,12 @@ $composer = json_decode(file_get_contents('composer.json'), true);
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <?php foreach ($composer['authors'] as $authorship) { ?>
-  <meta name="author" content="<?php echo $authorship['name']; ?>">
+    <meta name="author" content="<?php echo $authorship['name']; ?>">
   <?php } ?>
+
+  <!-- Implement stylesheets for assets -->
+  <link rel="stylesheet" href="asset/raster/raster.css?version=20">
+  <link rel="stylesheet" href="asset/inter/inter.css?version=3.15">
 </head>
 
 <body>
