@@ -1,4 +1,7 @@
 <?php
+/* Implement system functions */
+require_once 'system/functions.php';
+/* Decode Composer variables */
 $composer = json_decode(file_get_contents('composer.json'), true);
 ?>
 <!DOCTYPE html>
