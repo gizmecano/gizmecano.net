@@ -7,5 +7,11 @@
 # Binary files
 *.woff2
 
+# Images files
+*.jpg
+
 # Dependencies folder
 /vendor/
+
+# Dummy folders
+/matter/casual/dummy-*
