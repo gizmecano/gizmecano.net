@@ -9,11 +9,15 @@
   --Alabaster: 242, 240, 230;
   --Arsenic: 56, 68, 77;
   --BlackPearl: 21, 32, 43;
+  --Cerulean: 0, 106, 167;
   --Midnight: 27, 39, 55;
+  --TangerineYellow: 254, 204, 0;
+  --Vermilion: 227, 66, 52;
 }
 
 /* Root font variables
    ========================================================================== */
+
 :root { --fontSize: 16px; }
 
 /* Common settings
@@ -53,4 +57,64 @@ r-cell:last-child {
 r-cell:nth-child(1) > p,
 r-cell:last-child > p {
   max-width: none;
+}
+
+/**
+ * Header
+ */
+
+r-cell:nth-child(1) > h1:nth-child(1) {
+  font-weight: 720;
+  font-size: 2.8em;
+  line-height: 1.071em;
+  letter-spacing: -0.022em;
+}
+
+r-cell:nth-child(1) > p:nth-child(2) {
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: -0.019em;
+  line-height: 1.295em;
+}
+
+r-cell:nth-child(1) > p:nth-child(3) a:link,
+r-cell:nth-child(1) > p:nth-child(3) a:focus,
+r-cell:nth-child(1) > p:nth-child(3) a:visited {
+  text-shadow: 0 .5rem .5rem rgba(var(--Vermilion), .5);
+  color: rgb(var(--Alabaster));
+  text-decoration: underline solid rgb(var(--Vermilion));
+}
+
+r-cell:nth-child(1) > p:nth-child(3) a:hover {
+  text-shadow: none;
+  background-color: rgb(var(--Alabaster));
+  color: rgb(var(--Vermilion));
+  text-decoration: none;
+  background-color: rgb(var(--Alabaster));
+}
+
+/**
+ * Footer
+ */
+
+r-cell:last-child > p {
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  letter-spacing: -0.0025em;
+}
+
+r-cell:last-child > p a:link,
+r-cell:last-child > p a:focus,
+r-cell:last-child > p a:visited {
+  text-shadow: 0 .5rem .5rem rgba(var(--Cerulean), .5);
+  color: rgb(var(--TangerineYellow));
+  text-decoration: underline solid rgb(var(--Cerulean));
+}
+
+r-cell:last-child > p a:hover {
+  text-shadow: none;
+  background-color: rgb(var(--TangerineYellow));
+  color: rgb(var(--Cerulean));
+  text-decoration: none;
+  background-color: rgb(var(--TangerineYellow));
 }
