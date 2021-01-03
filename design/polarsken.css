@@ -4,9 +4,12 @@
 
 /* Root color variables
    ========================================================================== */
-:root {
+
+   :root {
   --Alabaster: 242, 240, 230;
+  --Arsenic: 56, 68, 77;
   --BlackPearl: 21, 32, 43;
+  --Midnight: 27, 39, 55;
 }
 
 /* Root font variables
@@ -22,4 +25,32 @@ html {
   font-weight: 300;
   letter-spacing: -0.011em;
   line-height: 1.375em;
+}
+
+/* Grid and cells settings
+   ========================================================================== */
+
+r-grid > r-cell {
+  padding: .5rem;
+}
+
+r-cell > p {
+  font-weight: 300;
+  hyphens: auto;
+  word-break: break-word;
+  max-width: 60ch;
+}
+
+/* Header and footer settings
+   ========================================================================== */
+
+r-cell:nth-child(1),
+r-cell:last-child {
+  background-color: rgb(var(--Midnight));
+  border: 1px solid rgb(var(--Arsenic));
+}
+
+r-cell:nth-child(1) > p,
+r-cell:last-child > p {
+  max-width: none;
 }
