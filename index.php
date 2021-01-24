@@ -34,6 +34,20 @@ $composer = json_decode(file_get_contents('composer.json'), true);
       ?>
     </r-cell>
 
+    <?php
+    foreach (glob('matter/casual/*', GLOB_ONLYDIR) as $folder) {
+      $input = json_decode(file_get_contents($folder . '/data.json'), true);
+    ?>
+      <r-cell span="4" span-s="row">
+        <h2><?php echo $input['name']; ?></h2>
+        <?php echo gzm_text($folder . '/text.md'); ?>
+      </r-cell>
+    <?php
+      unset($input);
+    }
+    unset($folder);
+    ?>
+
     <r-cell span="3-6" span-s="row">
       <?php
       $path = 'matter/static/footer.md';

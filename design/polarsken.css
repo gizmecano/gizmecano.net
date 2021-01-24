@@ -118,3 +118,13 @@ r-cell:last-child > p a:hover {
   text-decoration: none;
   background-color: rgb(var(--TangerineYellow));
 }
+
+/* Matter content settings
+   ========================================================================== */
+
+r-cell > h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: 0.019em;
+  line-height: 1.295em;
+}
