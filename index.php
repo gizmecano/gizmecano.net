@@ -37,13 +37,15 @@ $composer = json_decode(file_get_contents('composer.json'), true);
     <?php
     foreach (glob('matter/casual/*', GLOB_ONLYDIR) as $folder) {
       $input = json_decode(file_get_contents($folder . '/data.json'), true);
+      $image = glob($folder . '/shot.{jpg,png}', GLOB_BRACE);
     ?>
       <r-cell span="4" span-s="row">
         <h2><?php echo $input['name']; ?></h2>
+        <img class="h-16 fill bottom left" src="<?php echo $image[0]; ?>" alt="<?php echo $input['name']; ?>">
         <?php echo gzm_text($folder . '/text.md'); ?>
       </r-cell>
     <?php
-      unset($input);
+      unset($image, $input);
     }
     unset($folder);
     ?>
