@@ -40,7 +40,11 @@ $composer = json_decode(file_get_contents('composer.json'), true);
       $image = glob($folder . '/shot.{jpg,png}', GLOB_BRACE);
     ?>
       <r-cell span="4" span-s="row">
-        <h2><?php echo $input['name']; ?></h2>
+        <h2>
+          <a href="<?php echo $input['link']; ?>">
+            <?php echo $input['name']; ?>
+          </a>
+        </h2>
         <img class="h-16 fill bottom left" src="<?php echo $image[0]; ?>" alt="<?php echo $input['name']; ?>">
         <?php echo gzm_text($folder . '/text.md'); ?>
       </r-cell>

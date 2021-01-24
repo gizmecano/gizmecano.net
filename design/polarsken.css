@@ -128,3 +128,15 @@ r-cell > h2 {
   letter-spacing: 0.019em;
   line-height: 1.295em;
 }
+
+r-cell > h2 a:link,
+r-cell > h2 a:focus,
+r-cell > h2 a:visited {
+  color: rgb(var(--Alabaster));
+  text-decoration: underline solid rgb(var(--Vermilion));
+}
+
+r-cell > h2 a:hover {
+  color: rgb(var(--Vermilion));
+  text-decoration: underline solid rgb(var(--Arsenic));
+}
