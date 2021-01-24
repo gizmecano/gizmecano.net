@@ -9,9 +9,7 @@
 
 # Images files
 *.jpg
+*.png
 
 # Dependencies folder
 /vendor/
-
-# Dummy folders
-/matter/casual/dummy-*

@@ -11,4 +11,5 @@
 *.php  text eol=crlf
 # Denote files that are truly binary and should not be modified
 *.jpg   binary
+*.png   binary
 *.woff2 binary
