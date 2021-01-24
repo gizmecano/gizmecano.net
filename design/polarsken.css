@@ -11,6 +11,7 @@
   --BlackPearl: 21, 32, 43;
   --Cerulean: 0, 106, 167;
   --Midnight: 27, 39, 55;
+  --Pantone485: 221, 60, 39;
   --TangerineYellow: 254, 204, 0;
   --Vermilion: 227, 66, 52;
 }
@@ -19,6 +20,8 @@
    ========================================================================== */
 
 :root { --fontSize: 16px; }
+
+:root a { transition: all ease-in-out 1s; }
 
 /* Common settings
    ========================================================================== */
@@ -80,17 +83,13 @@ r-cell:nth-child(1) > p:nth-child(2) {
 r-cell:nth-child(1) > p:nth-child(3) a:link,
 r-cell:nth-child(1) > p:nth-child(3) a:focus,
 r-cell:nth-child(1) > p:nth-child(3) a:visited {
-  text-shadow: 0 .5rem .5rem rgba(var(--Vermilion), .5);
   color: rgb(var(--Alabaster));
   text-decoration: underline solid rgb(var(--Vermilion));
 }
 
 r-cell:nth-child(1) > p:nth-child(3) a:hover {
-  text-shadow: none;
-  background-color: rgb(var(--Alabaster));
   color: rgb(var(--Vermilion));
-  text-decoration: none;
-  background-color: rgb(var(--Alabaster));
+  text-decoration: underline solid rgb(var(--Alabaster));
 }
 
 /**
@@ -103,20 +102,28 @@ r-cell:last-child > p {
   letter-spacing: -0.0025em;
 }
 
-r-cell:last-child > p a:link,
-r-cell:last-child > p a:focus,
-r-cell:last-child > p a:visited {
-  text-shadow: 0 .5rem .5rem rgba(var(--Cerulean), .5);
+r-cell:last-child > p:first-child a:link,
+r-cell:last-child > p:first-child a:focus,
+r-cell:last-child > p:first-child a:visited {
+  color: rgb(var(--Cerulean));
+  text-decoration: underline solid rgb(var(--TangerineYellow));
+}
+
+r-cell:last-child > p:first-child a:hover {
   color: rgb(var(--TangerineYellow));
   text-decoration: underline solid rgb(var(--Cerulean));
 }
 
-r-cell:last-child > p a:hover {
-  text-shadow: none;
-  background-color: rgb(var(--TangerineYellow));
-  color: rgb(var(--Cerulean));
-  text-decoration: none;
-  background-color: rgb(var(--TangerineYellow));
+r-cell:last-child > p:last-child a:link,
+r-cell:last-child > p:last-child a:focus,
+r-cell:last-child > p:last-child a:visited {
+  color: rgb(var(--Pantone485));
+  text-decoration: underline solid rgb(var(--Alabaster));
+}
+
+r-cell:last-child > p:last-child a:hover {
+  color: rgb(var(--Alabaster));
+  text-decoration: underline solid rgb(var(--Pantone485));
 }
 
 /* Matter content settings
