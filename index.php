@@ -24,25 +24,25 @@ $composer = json_decode(file_get_contents('composer.json'), true);
 </head>
 
 <body>
-<r-grid columns="8">
+  <r-grid columns="8">
 
-<r-cell span="3-6" span-s="row">
-  <?php
-  $path = 'matter/static/header.md';
-  echo gzmformatext($path);
-  unset($path);
-  ?>
-</r-cell>
+    <r-cell span="3-6" span-s="row">
+      <?php
+      $path = 'matter/static/header.md';
+      echo gzm_text($path);
+      unset($path);
+      ?>
+    </r-cell>
 
-<r-cell span="3-6" span-s="row">
-  <?php
-  $path = 'matter/static/footer.md';
-  echo gzmformatext($path);
-  unset($path);
-  ?>
-</r-cell>
+    <r-cell span="3-6" span-s="row">
+      <?php
+      $path = 'matter/static/footer.md';
+      echo gzm_text($path);
+      unset($path);
+      ?>
+    </r-cell>
 
-</r-grid>
+  </r-grid>
 </body>
 
 </html>
