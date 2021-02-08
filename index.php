@@ -45,7 +45,7 @@ $composer = json_decode(file_get_contents('composer.json'), true);
             <?php echo $input['name']; ?>
           </a>
         </h2>
-        <img class="h-16 fill bottom left" src="<?php echo $image[0]; ?>" alt="<?php echo $input['name']; ?>">
+        <img class="h-20 fill bottom left padding0" src="<?php echo $image[0]; ?>" alt="<?php echo $input['name']; ?>">
         <?php echo gzm_text($folder . '/text.md'); ?>
       </r-cell>
     <?php
