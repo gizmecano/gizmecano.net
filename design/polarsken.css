@@ -142,12 +142,16 @@ r-cell > h2 {
 
 r-cell > h2 a:link,
 r-cell > h2 a:focus,
-r-cell > h2 a:visited {
+r-cell > h2 a:visited,
+r-cell > p a:link,
+r-cell > p a:focus,
+r-cell > p a:visited {
   color: rgb(var(--Alabaster));
   text-decoration: underline solid rgb(var(--Vermilion));
 }
 
-r-cell > h2 a:hover {
+r-cell > h2 a:hover,
+r-cell > p a:hover {
   color: rgb(var(--Vermilion));
   text-decoration: underline solid rgb(var(--Arsenic));
 }
