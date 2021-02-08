@@ -102,6 +102,10 @@ r-cell:last-child > p {
   letter-spacing: -0.0025em;
 }
 
+r-cell:last-child > p:first-child {
+  margin-bottom: calc(var(--blockSpacingBottom)/2);
+}
+
 r-cell:last-child > p:first-child a:link,
 r-cell:last-child > p:first-child a:focus,
 r-cell:last-child > p:first-child a:visited {
