@@ -48,6 +48,13 @@ r-cell > p {
   max-width: 60ch;
 }
 
+r-cell > p a {
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
 /* Header and footer settings
    ========================================================================== */
 
