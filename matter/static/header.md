@@ -1,0 +1,5 @@
+# Hello world!
+
+Welcome to this laboratory, a showcase built to present a choice of side projects and various other experiments, mainly in the web design field...
+
+The items listed below were developed by by [P. Mergey](https://twitter.com/gizmecano), a craftsman who makes [miscellaneous things](http://mergey.ch/) using keyboard and mouse, pushes [a couple of bytes](https://github.com/gizmecano) from time to time, and publishes [variegated pixels](https://dribbble.com/gizmecano) once in a while.
