@@ -1,0 +1,3 @@
+This single page has been built using [Raster](https://github.com/rsms/raster), a "_minimal and straight-forward CSS grid system utilizing descriptive HTML rather than semantic CSS_" and [Inter font](https://github.com/rsms/inter), a "_typeface specially designed for user interfaces_", both projects conceived by the Swedish designer [Rasmus Andersson](https://twitter.com/rsms).
+
+The main  is generated from Markdown files and converted with [PHP Markdown Extra](https://github.com/michelf/php-markdown) to "_structurally valid HTML_" then formatted and prettified with [PHP SmartyPants Typographer](https://github.com/michelf/php-smartypants), both projects maintained by the Canadian developer [Michel Fortin](https://twitter.com/michel_fortin).
