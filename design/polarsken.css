@@ -1,0 +1,164 @@
+/* ==========================================================================
+   Polarsken custom stylesheet
+   ========================================================================== */
+
+/* Root color variables
+   ========================================================================== */
+
+   :root {
+  --Alabaster: 242, 240, 230;
+  --Arsenic: 56, 68, 77;
+  --BlackPearl: 21, 32, 43;
+  --Cerulean: 0, 106, 167;
+  --Midnight: 27, 39, 55;
+  --Pantone485: 221, 60, 39;
+  --TangerineYellow: 254, 204, 0;
+  --Vermilion: 227, 66, 52;
+}
+
+/* Root font variables
+   ========================================================================== */
+
+:root { --fontSize: 16px; }
+
+:root a { transition: all ease-in-out 1s; }
+
+/* Common settings
+   ========================================================================== */
+
+html {
+  background-color: rgb(var(--BlackPearl));
+  color: rgb(var(--Alabaster));
+  font-weight: 300;
+  letter-spacing: -0.011em;
+  line-height: 1.375em;
+}
+
+/* Grid and cells settings
+   ========================================================================== */
+
+r-grid > r-cell {
+  padding: .5rem;
+}
+
+r-cell > p {
+  font-weight: 300;
+  hyphens: auto;
+  word-break: break-word;
+  max-width: 60ch;
+}
+
+r-cell > p a {
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+/* Header and footer settings
+   ========================================================================== */
+
+r-cell:nth-child(1),
+r-cell:last-child {
+  background-color: rgb(var(--Midnight));
+  border: 1px solid rgb(var(--Arsenic));
+}
+
+r-cell:nth-child(1) > p,
+r-cell:last-child > p {
+  max-width: none;
+}
+
+/**
+ * Header
+ */
+
+r-cell:nth-child(1) > h1:nth-child(1) {
+  font-weight: 720;
+  font-size: 2.8em;
+  line-height: 1.071em;
+  letter-spacing: -0.022em;
+}
+
+r-cell:nth-child(1) > p:nth-child(2) {
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: -0.019em;
+  line-height: 1.295em;
+}
+
+r-cell:nth-child(1) > p:nth-child(3) a:link,
+r-cell:nth-child(1) > p:nth-child(3) a:focus,
+r-cell:nth-child(1) > p:nth-child(3) a:visited {
+  color: rgb(var(--Alabaster));
+  text-decoration: underline solid rgb(var(--Vermilion));
+}
+
+r-cell:nth-child(1) > p:nth-child(3) a:hover {
+  color: rgb(var(--Vermilion));
+  text-decoration: underline solid rgb(var(--Alabaster));
+}
+
+/**
+ * Footer
+ */
+
+r-cell:last-child > p {
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  letter-spacing: -0.0025em;
+}
+
+r-cell:last-child > p:first-child {
+  margin-bottom: calc(var(--blockSpacingBottom)/2);
+}
+
+r-cell:last-child > p:first-child a:link,
+r-cell:last-child > p:first-child a:focus,
+r-cell:last-child > p:first-child a:visited {
+  color: rgb(var(--Cerulean));
+  text-decoration: underline solid rgb(var(--TangerineYellow));
+}
+
+r-cell:last-child > p:first-child a:hover {
+  color: rgb(var(--TangerineYellow));
+  text-decoration: underline solid rgb(var(--Cerulean));
+}
+
+r-cell:last-child > p:last-child a:link,
+r-cell:last-child > p:last-child a:focus,
+r-cell:last-child > p:last-child a:visited {
+  color: rgb(var(--Pantone485));
+  text-decoration: underline solid rgb(var(--Alabaster));
+}
+
+r-cell:last-child > p:last-child a:hover {
+  color: rgb(var(--Alabaster));
+  text-decoration: underline solid rgb(var(--Pantone485));
+}
+
+/* Matter content settings
+   ========================================================================== */
+
+r-cell > h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: 0.019em;
+  line-height: 1.295em;
+}
+
+r-cell > h2 a:link,
+r-cell > h2 a:focus,
+r-cell > h2 a:visited,
+r-cell > p a:link,
+r-cell > p a:focus,
+r-cell > p a:visited {
+  color: rgb(var(--Alabaster));
+  text-decoration: underline solid rgb(var(--Vermilion));
+}
+
+r-cell > h2 a:hover,
+r-cell > p a:hover {
+  color: rgb(var(--Vermilion));
+  text-decoration: underline solid rgb(var(--Arsenic));
+}

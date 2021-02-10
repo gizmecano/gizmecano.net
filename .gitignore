@@ -1,2 +1,15 @@
-# Operating system settings
+# Operating system
 [Dd]esktop.ini
+
+# Development environment
+*.code-workspace
+
+# Binary files
+*.woff2
+
+# Images files
+*.jpg
+*.png
+
+# Dependencies folder
+/vendor/
