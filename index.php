@@ -18,7 +18,7 @@ $composer = json_decode(file_get_contents('composer.json'), true);
 
   <!-- Implement stylesheets for assets -->
   <link rel="stylesheet" href="asset/raster/raster.css?version=20">
-  <link rel="stylesheet" href="asset/inter/inter.css?version=3.15">
+  <link rel="stylesheet" href="asset/inter/inter.css?version=3.19">
   <!-- Implement custom stylesheet -->
   <link rel="stylesheet" href="design/polarsken.css?version=<?php echo $composer['version']; ?>">
 </head>
