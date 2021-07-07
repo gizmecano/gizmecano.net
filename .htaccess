@@ -18,14 +18,11 @@
   RewriteRule ^error-404$ http://mergey.ch/error-404 [R=301,L]
   RewriteRule ^contact$ http://mergey.ch/contact [R=301,L]
   RewriteRule ^projects$ http://mergey.ch/ [R=301,L]
-</IfModule>
-
-<IfModule mod_alias.c>
-  RedirectPermanent /website=annapurna http://mergey.ch/site=annapurna
-  RedirectPermanent /website=captainbooks http://mergey.ch/site=captainbooks
-  RedirectPermanent /website=clepsydre http://mergey.ch/site=clepsydre
-  RedirectPermanent /website=gizmecano http://mergey.ch/site=gizmecano
-  RedirectPermanent /website=jose-sanchez http://mergey.ch/site=jose-sanchez
-  RedirectPermanent /website=moutons-electriques http://mergey.ch/site=moutons-electriques
-  RedirectPermanent /website=yellow-submarine http://mergey.ch/site=yellow-submarine
+  RewriteRule ^website=annapurna$ http://mergey.ch/error-302 [R=302,L]
+  RewriteRule ^website=captainbooks$ http://mergey.ch/error-302 [R=302,L]
+  RewriteRule ^website=clepsydre$ http://mergey.ch/error-302 [R=302,L]
+  RewriteRule ^website=gizmecano$ http://mergey.ch/error-302 [R=302,L]
+  RewriteRule ^website=jose-sanchez$ http://mergey.ch/error-302 [R=302,L]
+  RewriteRule ^website=moutons-electriques$ http://mergey.ch/error-302 [R=302,L]
+  RewriteRule ^website=yellow-submarine$ http://mergey.ch/error-302 [R=302,L]
 </IfModule>
