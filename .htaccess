@@ -8,4 +8,9 @@
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+  RewriteRule ^index\.(htm|html|php) / [R=301]
+  RewriteRule ^([a-zA-Z0-9\-]+)\=([a-zA-Z0-9\-]+)$ projet.php?$1=$2 [QSA,L]
+  RewriteRule ^error-([a-zA-Z0-9\-]+)$ erreur.php?type=$1 [QSA,L]
+  RewriteRule ^projects$ travaux.php [QSA,L]
+  RewriteRule ^contact$ contact.php [QSA,L]
 </IfModule>
