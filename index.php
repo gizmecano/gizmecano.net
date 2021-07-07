@@ -21,6 +21,8 @@ $composer = json_decode(file_get_contents('composer.json'), true);
   <link rel="stylesheet" href="asset/inter/inter.css?version=3.19">
   <!-- Implement custom stylesheet -->
   <link rel="stylesheet" href="design/polarsken.css?version=<?php echo $composer['version']; ?>">
+  <link rel="shortcut icon" sizes="196x196" href="design/favicon-196.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="design/favicon-196.png">
 </head>
 
 <body>
