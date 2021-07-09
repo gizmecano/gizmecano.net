@@ -15,12 +15,28 @@ $composer = json_decode(file_get_contents('composer.json'), true);
   <?php foreach ($composer['authors'] as $authorship) { ?>
     <meta name="author" content="<?php echo $authorship['name']; ?>">
   <?php } ?>
-
+  <!-- Schema.org item properties -->
+  <meta itemprop="name" content="<?php echo $composer['description']; ?>">
+  <meta itemprop="description" content="A showcase built to present side projects and experiments in the web design field">
+  <meta itemprop="image" content="<?php echo $composer['homepage']; ?>design/screenshot.jpg">
+  <!-- OpenGraph properties -->
+  <meta property="og:locale" content="fr_CH">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<?php echo $composer['homepage']; ?>">
+  <meta property="og:title" content="<?php echo $composer['description']; ?>">
+  <meta property="og:description" content="A showcase built to present side projects and experiments in the web design field">
+  <meta property="og:site_name" content="<?php echo $composer['description']; ?>">
+  <meta property="og:image" content="<?php echo $composer['homepage']; ?>design/screenshot.jpg">
+  <!-- Twitter names -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@gizmecano">
+  <meta name="twitter:creator" content="@gizmecano">
   <!-- Implement stylesheets for assets -->
   <link rel="stylesheet" href="asset/raster/raster.css?version=20">
   <link rel="stylesheet" href="asset/inter/inter.css?version=3.19">
   <!-- Implement custom stylesheet -->
   <link rel="stylesheet" href="design/polarsken.css?version=<?php echo $composer['version']; ?>">
+  <!-- Display shortcut favicon -->
   <link rel="shortcut icon" sizes="196x196" href="design/favicon-196.png">
   <link rel="icon" type="image/png" sizes="196x196" href="design/favicon-196.png">
 </head>
