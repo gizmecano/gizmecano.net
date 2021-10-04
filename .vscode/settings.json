@@ -7,7 +7,9 @@
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 80,
   "files.exclude": {
-    "**/desktop.ini": true
+    "**/*.ini": true,
+    "**/*.woff2": true,
+    "**/vendor": true
   },
   "files.trimTrailingWhitespace": true,
   "git.enableCommitSigning": true,
