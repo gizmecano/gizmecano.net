@@ -4,11 +4,13 @@
   ],
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 80,
+  "files.exclude": {
+    "**/desktop.ini": true
+  },
+  "files.trimTrailingWhitespace": true,
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80,
+    "files.trimTrailingWhitespace": false
   },
-  "files.exclude": {
-    "**/desktop.ini": true
-  }
 }
