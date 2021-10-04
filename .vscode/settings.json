@@ -10,6 +10,7 @@
     "**/desktop.ini": true
   },
   "files.trimTrailingWhitespace": true,
+  "git.enableCommitSigning": true,
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80,
