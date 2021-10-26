@@ -50,6 +50,11 @@ r-cell > p {
   hyphens: auto;
   word-break: break-word;
   max-width: 60ch;
+  margin-bottom: calc(var(--blockSpacingBottom) / 2);
+}
+
+r-cell > p:last-child {
+  margin-bottom: 0;
 }
 
 r-cell > p a {
@@ -111,10 +116,6 @@ r-cell:last-child > p {
   font-size: 0.8rem;
   line-height: 1.5em;
   letter-spacing: -0.0025em;
-}
-
-r-cell:last-child > p:first-child {
-  margin-bottom: calc(var(--blockSpacingBottom) / 2);
 }
 
 r-cell:last-child > p:first-child a:link,
