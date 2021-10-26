@@ -5,7 +5,7 @@
 /* Root color variables
    ========================================================================== */
 
-   :root {
+:root {
   --Alabaster: 242, 240, 230;
   --Arsenic: 56, 68, 77;
   --BlackPearl: 21, 32, 43;
@@ -19,9 +19,13 @@
 /* Root font variables
    ========================================================================== */
 
-:root { --fontSize: 16px; }
+:root {
+  --fontSize: 16px;
+}
 
-:root a { transition: all ease-in-out 1s; }
+:root a {
+  transition: all ease-in-out 1s;
+}
 
 /* Common settings
    ========================================================================== */
@@ -38,7 +42,7 @@ html {
    ========================================================================== */
 
 r-grid > r-cell {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 r-cell > p {
@@ -46,6 +50,11 @@ r-cell > p {
   hyphens: auto;
   word-break: break-word;
   max-width: 60ch;
+  margin-bottom: calc(var(--blockSpacingBottom) / 2);
+}
+
+r-cell > p:last-child {
+  margin-bottom: 0;
 }
 
 r-cell > p a {
@@ -104,13 +113,9 @@ r-cell:nth-child(1) > p:nth-child(3) a:hover {
  */
 
 r-cell:last-child > p {
-  font-size: 0.8rem;
-  line-height: 1.5em;
-  letter-spacing: -0.0025em;
-}
-
-r-cell:last-child > p:first-child {
-  margin-bottom: calc(var(--blockSpacingBottom)/2);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.0006em;
 }
 
 r-cell:last-child > p:first-child a:link,
