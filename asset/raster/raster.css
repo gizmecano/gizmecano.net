@@ -1,6 +1,6 @@
 /* Raster v20 (dev package) (rsms.me/raster) */
 /* @import url('https://rsms.me/inter/inter.css'); */
-@import url('https://rsms.me/res/fonts/iaw.css');
+/* @import url('https://rsms.me/res/fonts/iaw.css'); */
 /*
 
 Variables
@@ -248,7 +248,7 @@ r-grid > r-cell[span="row"] { grid-column: 1 / -1 }
   r-grid[columns-s="28"] { --grid-tc: repeat(28, 1fr) }
   r-grid[columns-s="29"] { --grid-tc: repeat(29, 1fr) }
   r-grid[columns-s="30"] { --grid-tc: repeat(30, 1fr) }
-  
+
   /* span-s=start... */
   r-grid > r-cell[span-s^="1"] { --grid-cs: 1 }
   r-grid > r-cell[span-s^="2"] { --grid-cs: 2 }
@@ -280,7 +280,7 @@ r-grid > r-cell[span="row"] { grid-column: 1 / -1 }
   r-grid > r-cell[span-s^="28"] { --grid-cs: 28 }
   r-grid > r-cell[span-s^="29"] { --grid-cs: 29 }
   r-grid > r-cell[span-s^="30"] { --grid-cs: 30 }
-  
+
   /* span-s=...+width, span-s=...-end */
   r-grid > r-cell[span-s$="+1"], r-grid > r-cell[span-s="1"] { --grid-ce: 1 }
   r-grid > r-cell[span-s$="+2"], r-grid > r-cell[span-s$="-1"], r-grid > r-cell[span-s="2"] { --grid-ce: 2 }
@@ -313,7 +313,7 @@ r-grid > r-cell[span="row"] { grid-column: 1 / -1 }
   r-grid > r-cell[span-s$="+29"], r-grid > r-cell[span-s$="-28"], r-grid > r-cell[span-s="29"] { --grid-ce: 29 }
   r-grid > r-cell[span-s$="+30"], r-grid > r-cell[span-s$="-29"], r-grid > r-cell[span-s="30"] { --grid-ce: 30 }
   r-grid > r-cell[span-s$="-30"] { --grid-ce: 31 }
-  
+
   /* connect vars */
   r-grid > r-cell[span-s] { grid-column-end: span var(--grid-ce) }
   r-grid > r-cell[span-s*="+"], r-grid > r-cell[span-s*="-"], r-grid > r-cell[span-s*=".."] {
@@ -354,7 +354,7 @@ r-grid > r-cell[span="row"] { grid-column: 1 / -1 }
   r-grid[columns-l="28"] { --grid-tc: repeat(28, 1fr) }
   r-grid[columns-l="29"] { --grid-tc: repeat(29, 1fr) }
   r-grid[columns-l="30"] { --grid-tc: repeat(30, 1fr) }
-  
+
   /* span-l=start... */
   r-grid > r-cell[span-l^="1"] { --grid-cs: 1 }
   r-grid > r-cell[span-l^="2"] { --grid-cs: 2 }
@@ -386,7 +386,7 @@ r-grid > r-cell[span="row"] { grid-column: 1 / -1 }
   r-grid > r-cell[span-l^="28"] { --grid-cs: 28 }
   r-grid > r-cell[span-l^="29"] { --grid-cs: 29 }
   r-grid > r-cell[span-l^="30"] { --grid-cs: 30 }
-  
+
   /* span-l=...+width, span-l=...-end */
   r-grid > r-cell[span-l$="+1"], r-grid > r-cell[span-l="1"] { --grid-ce: 1 }
   r-grid > r-cell[span-l$="+2"], r-grid > r-cell[span-l$="-1"], r-grid > r-cell[span-l="2"] { --grid-ce: 2 }
@@ -419,7 +419,7 @@ r-grid > r-cell[span="row"] { grid-column: 1 / -1 }
   r-grid > r-cell[span-l$="+29"], r-grid > r-cell[span-l$="-28"], r-grid > r-cell[span-l="29"] { --grid-ce: 29 }
   r-grid > r-cell[span-l$="+30"], r-grid > r-cell[span-l$="-29"], r-grid > r-cell[span-l="30"] { --grid-ce: 30 }
   r-grid > r-cell[span-l$="-30"] { --grid-ce: 31 }
-  
+
   /* connect vars */
   r-grid > r-cell[span-l] { grid-column-end: span var(--grid-ce) }
   r-grid > r-cell[span-l*="+"], r-grid > r-cell[span-l*="-"], r-grid > r-cell[span-l*=".."] {
