@@ -5,6 +5,7 @@
     "esbenp.prettier-vscode",
     "file-icons.file-icons",
     "github.github-vscode-theme",
-    "ikappas.composer"
+    "ikappas.composer",
+    "tyriar.sort-lines"
   ]
 }
