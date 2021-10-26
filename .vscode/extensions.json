@@ -2,8 +2,10 @@
   "recommendations": [
     "bmewburn.vscode-intelephense-client",
     "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
     "file-icons.file-icons",
     "github.github-vscode-theme",
-    "ikappas.composer"
+    "ikappas.composer",
+    "tyriar.sort-lines"
   ]
 }
