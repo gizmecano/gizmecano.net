@@ -5,7 +5,7 @@
 /* Root color variables
    ========================================================================== */
 
-   :root {
+:root {
   --Alabaster: 242, 240, 230;
   --Arsenic: 56, 68, 77;
   --BlackPearl: 21, 32, 43;
@@ -19,9 +19,13 @@
 /* Root font variables
    ========================================================================== */
 
-:root { --fontSize: 16px; }
+:root {
+  --fontSize: 16px;
+}
 
-:root a { transition: all ease-in-out 1s; }
+:root a {
+  transition: all ease-in-out 1s;
+}
 
 /* Common settings
    ========================================================================== */
@@ -38,7 +42,7 @@ html {
    ========================================================================== */
 
 r-grid > r-cell {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 r-cell > p {
@@ -110,7 +114,7 @@ r-cell:last-child > p {
 }
 
 r-cell:last-child > p:first-child {
-  margin-bottom: calc(var(--blockSpacingBottom)/2);
+  margin-bottom: calc(var(--blockSpacingBottom) / 2);
 }
 
 r-cell:last-child > p:first-child a:link,
