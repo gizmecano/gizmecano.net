@@ -113,9 +113,9 @@ r-cell:nth-child(1) > p:nth-child(3) a:hover {
  */
 
 r-cell:last-child > p {
-  font-size: 0.8rem;
-  line-height: 1.5em;
-  letter-spacing: -0.0025em;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.0006em;
 }
 
 r-cell:last-child > p:first-child a:link,
