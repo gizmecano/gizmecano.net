@@ -23,7 +23,6 @@ Variables
 }}*/
 :root {
   --sansFont: "Inter var";
-  --monoFont: "iaw-mono";  /* "IBM Plex Mono" */
 
   /* line height is the basis for vertical spacing */
   --lineHeight: calc(var(--fontSize) * 1.5);
@@ -61,7 +60,6 @@ Variables
 @supports (font-variation-settings: normal) {
   :root {
     --sansFont: "Inter var";
-    --monoFont: "iaw-mono-var";
   }
 }
 @media only screen and (min-resolution: 1.5dppx) { :root {
@@ -524,7 +522,7 @@ b, strong, .bold { font-weight: 600; }
 i, em, .italic { font-style: italic; }
 /* preformatted text */
 pre, code, tt, .code, .monospace {
-  font-family: var(--monoFont), Inconsolata, Menlo, monospace;
+  font-family: Inconsolata, Menlo, monospace;
   font-weight: 430;
   word-wrap: break-word;
   white-space: pre-wrap;
