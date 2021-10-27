@@ -46,7 +46,7 @@ $composer = json_decode(file_get_contents('composer.json'), true);
 
     <r-cell span="3-6" span-s="row">
       <?php
-      $path = 'matter/static/header.md';
+      $path = 'matter/static/incipit.md';
       echo gzm_text($path);
       unset($path);
       ?>

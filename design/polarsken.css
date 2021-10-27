@@ -64,7 +64,7 @@ r-cell > p a {
   word-wrap: break-word;
 }
 
-/* Header and credits settings
+/* Incipit and credits settings
    ========================================================================== */
 
 r-cell:nth-child(1),
@@ -79,7 +79,7 @@ r-cell:last-child > p {
 }
 
 /**
- * Header
+ * Incipit
  */
 
 r-cell:nth-child(1) > h1:nth-child(1) {
