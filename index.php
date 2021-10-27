@@ -74,7 +74,7 @@ $composer = json_decode(file_get_contents('composer.json'), true);
 
     <r-cell span="3-6" span-s="row">
       <?php
-      $path = 'matter/static/footer.md';
+      $path = 'matter/static/credits.md';
       echo gzm_text($path);
       unset($path);
       ?>

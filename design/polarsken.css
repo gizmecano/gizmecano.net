@@ -64,7 +64,7 @@ r-cell > p a {
   word-wrap: break-word;
 }
 
-/* Header and footer settings
+/* Header and credits settings
    ========================================================================== */
 
 r-cell:nth-child(1),
@@ -109,7 +109,7 @@ r-cell:nth-child(1) > p:nth-child(3) a:hover {
 }
 
 /**
- * Footer
+ * Credits
  */
 
 r-cell:last-child > p {
