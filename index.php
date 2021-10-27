@@ -80,6 +80,14 @@ $composer = json_decode(file_get_contents('composer.json'), true);
       ?>
     </r-cell>
 
+    <r-cell span="3-6" span-s="row">
+      <?php
+      $path = 'matter/static/imprint.md';
+      echo gzm_text($path);
+      unset($path);
+      ?>
+    </r-cell>
+
   </r-grid>
 </body>
 
