@@ -1,0 +1,1 @@
+This website is created, owned and published by [P. Mergey](http://mergey.ch/): imprint and contact informations are available on [the specifically dedicated page](http://mergey.ch/imprint) on the main portfolio.
