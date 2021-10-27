@@ -64,18 +64,27 @@ r-cell > p a {
   word-wrap: break-word;
 }
 
-/* Incipit and credits settings
+/* Incipit, credits and imprint settings
    ========================================================================== */
 
 r-cell:nth-child(1),
-r-cell:nth-last-child(2) {
+r-cell:nth-last-child(2),
+r-cell:last-child {
   background-color: rgb(var(--Midnight));
   border: 1px solid rgb(var(--Arsenic));
 }
 
 r-cell:nth-child(1) > p,
-r-cell:nth-last-child(2) > p {
+r-cell:nth-last-child(2) > p,
+r-cell:last-child > p {
   max-width: none;
+}
+
+r-cell:nth-last-child(2) > p,
+r-cell:last-child > p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.0006em;
 }
 
 /**
@@ -112,12 +121,6 @@ r-cell:nth-child(1) > p:nth-child(3) a:hover {
  * Credits
  */
 
-r-cell:nth-last-child(2) > p {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: -0.0006em;
-}
-
 r-cell:nth-last-child(2) > p:first-child a:link,
 r-cell:nth-last-child(2) > p:first-child a:focus,
 r-cell:nth-last-child(2) > p:first-child a:visited {
@@ -142,7 +145,7 @@ r-cell:nth-last-child(2) > p:last-child a:hover {
   text-decoration: underline solid rgb(var(--Pantone485));
 }
 
-/* Matter content settings
+/* Content settings
    ========================================================================== */
 
 r-cell > h2 {
