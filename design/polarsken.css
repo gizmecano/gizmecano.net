@@ -38,6 +38,10 @@ html {
   line-height: 1.375em;
 }
 
+a {
+  white-space: normal;
+}
+
 /* Grid and cells settings
    ========================================================================== */
 
@@ -59,9 +63,6 @@ r-cell > p:last-child {
 
 r-cell > p a {
   hyphens: auto;
-  overflow-wrap: break-word;
-  word-break: break-all;
-  word-wrap: break-word;
 }
 
 /* Incipit, credits and imprint settings
