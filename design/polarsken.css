@@ -68,13 +68,13 @@ r-cell > p a {
    ========================================================================== */
 
 r-cell:nth-child(1),
-r-cell:last-child {
+r-cell:nth-last-child(2) {
   background-color: rgb(var(--Midnight));
   border: 1px solid rgb(var(--Arsenic));
 }
 
 r-cell:nth-child(1) > p,
-r-cell:last-child > p {
+r-cell:nth-last-child(2) > p {
   max-width: none;
 }
 
@@ -112,32 +112,32 @@ r-cell:nth-child(1) > p:nth-child(3) a:hover {
  * Credits
  */
 
-r-cell:last-child > p {
+r-cell:nth-last-child(2) > p {
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: -0.0006em;
 }
 
-r-cell:last-child > p:first-child a:link,
-r-cell:last-child > p:first-child a:focus,
-r-cell:last-child > p:first-child a:visited {
+r-cell:nth-last-child(2) > p:first-child a:link,
+r-cell:nth-last-child(2) > p:first-child a:focus,
+r-cell:nth-last-child(2) > p:first-child a:visited {
   color: rgb(var(--Cerulean));
   text-decoration: underline solid rgb(var(--TangerineYellow));
 }
 
-r-cell:last-child > p:first-child a:hover {
+r-cell:nth-last-child(2) > p:first-child a:hover {
   color: rgb(var(--TangerineYellow));
   text-decoration: underline solid rgb(var(--Cerulean));
 }
 
-r-cell:last-child > p:last-child a:link,
-r-cell:last-child > p:last-child a:focus,
-r-cell:last-child > p:last-child a:visited {
+r-cell:nth-last-child(2) > p:last-child a:link,
+r-cell:nth-last-child(2) > p:last-child a:focus,
+r-cell:nth-last-child(2) > p:last-child a:visited {
   color: rgb(var(--Pantone485));
   text-decoration: underline solid rgb(var(--Alabaster));
 }
 
-r-cell:last-child > p:last-child a:hover {
+r-cell:nth-last-child(2) > p:last-child a:hover {
   color: rgb(var(--Alabaster));
   text-decoration: underline solid rgb(var(--Pantone485));
 }
