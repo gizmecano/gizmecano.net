@@ -46,7 +46,7 @@ $composer = json_decode(file_get_contents('composer.json'), true);
 
     <r-cell span="3-6" span-s="row">
       <?php
-      $path = 'matter/static/header.md';
+      $path = 'matter/static/incipit.md';
       echo gzm_text($path);
       unset($path);
       ?>
@@ -58,12 +58,8 @@ $composer = json_decode(file_get_contents('composer.json'), true);
       $image = glob($folder . '/shot.{jpg,png}', GLOB_BRACE);
     ?>
       <r-cell span="4" span-s="row">
-        <h2>
-          <a href="<?php echo $input['link']; ?>">
-            <?php echo $input['name']; ?>
-          </a>
-        </h2>
-        <img class="h-20 fill bottom left padding0" src="<?php echo $image[0]; ?>" alt="<?php echo $input['name']; ?>">
+        <h2><a href="<?php echo $input['link']; ?>"><?php echo $input['name']; ?></a></h2>
+        <img class="h-16 top cover" width="100%" src="<?php echo $image[0]; ?>" alt="<?php echo $input['name']; ?>">
         <?php echo gzm_text($folder . '/text.md'); ?>
       </r-cell>
     <?php
@@ -74,7 +70,15 @@ $composer = json_decode(file_get_contents('composer.json'), true);
 
     <r-cell span="3-6" span-s="row">
       <?php
-      $path = 'matter/static/footer.md';
+      $path = 'matter/static/credits.md';
+      echo gzm_text($path);
+      unset($path);
+      ?>
+    </r-cell>
+
+    <r-cell span="3-6" span-s="row">
+      <?php
+      $path = 'matter/static/imprint.md';
       echo gzm_text($path);
       unset($path);
       ?>

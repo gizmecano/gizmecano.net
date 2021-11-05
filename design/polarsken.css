@@ -5,7 +5,7 @@
 /* Root color variables
    ========================================================================== */
 
-   :root {
+:root {
   --Alabaster: 242, 240, 230;
   --Arsenic: 56, 68, 77;
   --BlackPearl: 21, 32, 43;
@@ -19,9 +19,13 @@
 /* Root font variables
    ========================================================================== */
 
-:root { --fontSize: 16px; }
+:root {
+  --fontSize: 16px;
+}
 
-:root a { transition: all ease-in-out 1s; }
+:root a {
+  transition: all ease-in-out 1s;
+}
 
 /* Common settings
    ========================================================================== */
@@ -34,11 +38,19 @@ html {
   line-height: 1.375em;
 }
 
+a {
+  white-space: normal;
+}
+
+img{
+  border: 1px solid rgb(var(--Arsenic));
+}
+
 /* Grid and cells settings
    ========================================================================== */
 
 r-grid > r-cell {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 r-cell > p {
@@ -46,31 +58,42 @@ r-cell > p {
   hyphens: auto;
   word-break: break-word;
   max-width: 60ch;
+  margin-bottom: calc(var(--blockSpacingBottom) / 2);
+}
+
+r-cell > p:last-child {
+  margin-bottom: 0;
 }
 
 r-cell > p a {
   hyphens: auto;
-  overflow-wrap: break-word;
-  word-break: break-all;
-  word-wrap: break-word;
 }
 
-/* Header and footer settings
+/* Incipit, credits and imprint settings
    ========================================================================== */
 
 r-cell:nth-child(1),
+r-cell:nth-last-child(2),
 r-cell:last-child {
   background-color: rgb(var(--Midnight));
   border: 1px solid rgb(var(--Arsenic));
 }
 
 r-cell:nth-child(1) > p,
+r-cell:nth-last-child(2) > p,
 r-cell:last-child > p {
   max-width: none;
 }
 
+r-cell:nth-last-child(2) > p,
+r-cell:last-child > p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.0006em;
+}
+
 /**
- * Header
+ * Incipit
  */
 
 r-cell:nth-child(1) > h1:nth-child(1) {
@@ -100,44 +123,34 @@ r-cell:nth-child(1) > p:nth-child(3) a:hover {
 }
 
 /**
- * Footer
+ * Credits
  */
 
-r-cell:last-child > p {
-  font-size: 0.8rem;
-  line-height: 1.5em;
-  letter-spacing: -0.0025em;
-}
-
-r-cell:last-child > p:first-child {
-  margin-bottom: calc(var(--blockSpacingBottom)/2);
-}
-
-r-cell:last-child > p:first-child a:link,
-r-cell:last-child > p:first-child a:focus,
-r-cell:last-child > p:first-child a:visited {
+r-cell:nth-last-child(2) > p:first-child a:link,
+r-cell:nth-last-child(2) > p:first-child a:focus,
+r-cell:nth-last-child(2) > p:first-child a:visited {
   color: rgb(var(--Cerulean));
   text-decoration: underline solid rgb(var(--TangerineYellow));
 }
 
-r-cell:last-child > p:first-child a:hover {
+r-cell:nth-last-child(2) > p:first-child a:hover {
   color: rgb(var(--TangerineYellow));
   text-decoration: underline solid rgb(var(--Cerulean));
 }
 
-r-cell:last-child > p:last-child a:link,
-r-cell:last-child > p:last-child a:focus,
-r-cell:last-child > p:last-child a:visited {
+r-cell:nth-last-child(2) > p:last-child a:link,
+r-cell:nth-last-child(2) > p:last-child a:focus,
+r-cell:nth-last-child(2) > p:last-child a:visited {
   color: rgb(var(--Pantone485));
   text-decoration: underline solid rgb(var(--Alabaster));
 }
 
-r-cell:last-child > p:last-child a:hover {
+r-cell:nth-last-child(2) > p:last-child a:hover {
   color: rgb(var(--Alabaster));
   text-decoration: underline solid rgb(var(--Pantone485));
 }
 
-/* Matter content settings
+/* Content settings
    ========================================================================== */
 
 r-cell > h2 {

@@ -1,0 +1,3 @@
+This website is built on the basis of [Raster](https://github.com/rsms/raster), a "_minimal and straight-forward CSS grid system utilizing descriptive HTML rather than semantic CSS_" and is using [Inter font](https://github.com/rsms/inter), a "_typeface specially designed for user interfaces_", both projects conceived by the Swedish designer [Rasmus Andersson](https://rsms.me/).
+
+The textual content is generated from Markdown files which are formatted with [PHP Markdown Extra](https://github.com/michelf/php-markdown) to "_structurally valid HTML_" and subsequently prettified with [PHP SmartyPants Typographer](https://github.com/michelf/php-smartypants) to convert punctuation marks, both projects maintained by the Canadian developer [Michel Fortin](https://michelf.ca/).
