@@ -11,8 +11,7 @@
   "editor.wordWrapColumn": 80,
   "files.exclude": {
     "**/*.ini": true,
-    "**/*.woff2": true,
-    "**/vendor": true
+    "**/*.woff2": true
   },
   "files.trimTrailingWhitespace": true,
   "git.enableCommitSigning": true,
