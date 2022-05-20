@@ -1,0 +1,5 @@
+[Hereditor](https://htg.gizmecano.net) is a website which aims to enable a previewing of the [eponymous theme](https://github.com/gizmecano/grav-theme-hereditor/) in action, from the basics of the [skeleton package](https://github.com/gizmecano/grav-skeleton-hereditor-site) specifically designed for this purpose.
+
+This theme is designed for [Grav](https://github.com/getgrav/grav) and was originally a fork of the [_Mediator_ theme](https://github.com/getgrav/grav-theme-mediator) developed by [Grav Team and contributors](https://github.com/getgrav/grav-theme-mediator/graphs/contributors), which was a port of the [_Mediator_ theme](https://github.com/dirkfabisch/mediator) for [Jekyll](https://github.com/jekyll/jekyll) designed by [Dirk Fabisch](https://twitter.com/dirkfabisch), which in turn was inspired by the [_Readium_ theme](https://github.com/starburst1977/readium) for [Ghost](https://github.com/TryGhost/Ghost) elaborated by [Sven Read](https://twitter.com/starburst1977). 
+
+The wording _Hereditor_ comes from a [Latin verb](https://en.wiktionary.org/wiki/heredito#Latin) relating to heirs what seems quite logical for such a project having so many ancestors!
