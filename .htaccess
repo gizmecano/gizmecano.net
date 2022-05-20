@@ -1,4 +1,20 @@
 # ----------------------------------------------------------------------
+# | Expiration module                                                  |
+# ----------------------------------------------------------------------
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault                        "access plus 1 week"
+    ExpiresByType application/font-woff2  "access plus 1 week"
+    ExpiresByType application/json        "access plus 0 seconds"
+    ExpiresByType image/jpeg              "access plus 1 week"
+    ExpiresByType image/png               "access plus 1 week"
+    ExpiresByType text/css                "access plus 1 week"
+    ExpiresByType text/markdown           "access plus 0 seconds"
+    ExpiresByType text/php                "access plus 0 seconds"
+</IfModule>
+
+# ----------------------------------------------------------------------
 # | Rewrite engine                                                     |
 # ----------------------------------------------------------------------
 
