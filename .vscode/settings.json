@@ -1,14 +1,17 @@
 {
+  "css.format.newlineBetweenRules": true,
+  "css.format.newlineBetweenSelectors": true,
+  "css.format.spaceAroundSelectorSeparator": true,
   "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
   "editor.renderWhitespace": "all",
   "editor.rulers": [80],
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 80,
   "files.exclude": {
     "**/*.ini": true,
-    "**/*.woff2": true,
-    "**/vendor": true
+    "**/*.woff2": true
   },
   "files.trimTrailingWhitespace": true,
   "git.enableCommitSigning": true,
