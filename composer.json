@@ -10,6 +10,11 @@
       "role": "owner"
     }
   ],
+  "config": {
+    "platform": {
+      "php": "7.4.30"
+    }
+  },
   "require": {
     "michelf/php-markdown": "~1.9",
     "michelf/php-smartypants": "~1.8"
