@@ -4,6 +4,9 @@
 # Development environment
 *.code-workspace
 
+# Inputted content
+/matter/
+
 # Binary files
 *.woff2
 
