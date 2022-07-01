@@ -1,7 +1,7 @@
 {
   "name": "gizmecano/gizmecano.net",
   "description": "the GizMecano Laboratory",
-  "version": "7.0.0-beta.3",
+  "version": "7.0.0-beta.4",
   "homepage": "http://gizmecano.net/",
   "authors": [
     {
@@ -10,6 +10,11 @@
       "role": "owner"
     }
   ],
+  "config": {
+    "platform": {
+      "php": "7.4.30"
+    }
+  },
   "require": {
     "michelf/php-markdown": "~1.9",
     "michelf/php-smartypants": "~1.8"
