@@ -26,6 +26,5 @@
       "Michelf\\SmartyPants": "vendor/michelf/php-smartypants/Michelf"
     }
   },
-  "type": "project",
-  "license": "proprietary"
+  "type": "project"
 }
