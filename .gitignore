@@ -14,5 +14,7 @@
 *.jpg
 *.png
 
-# Dependencies folder
-/vendor/
+# Dependencies folder (except license files)
+/vendor/**
+!/vendor/**/
+![Ll]icense*

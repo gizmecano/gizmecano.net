@@ -1,7 +1,7 @@
 {
   "name": "gizmecano/gizmecano.net",
   "description": "the GizMecano Laboratory",
-  "version": "7.0.0-beta.4",
+  "version": "7.0.0",
   "homepage": "http://gizmecano.net/",
   "authors": [
     {
@@ -16,7 +16,7 @@
     }
   },
   "require": {
-    "michelf/php-markdown": "~1.9",
+    "michelf/php-markdown": "~2.0",
     "michelf/php-smartypants": "~1.8"
   },
   "minimum-stability": "stable",
@@ -26,6 +26,5 @@
       "Michelf\\SmartyPants": "vendor/michelf/php-smartypants/Michelf"
     }
   },
-  "type": "project",
-  "license": "proprietary"
+  "type": "project"
 }

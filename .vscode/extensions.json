@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "bmewburn.vscode-intelephense-client",
+    "davidanson.vscode-markdownlint",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "file-icons.file-icons",
